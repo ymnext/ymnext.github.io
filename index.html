@@ -251,6 +251,142 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
 .footer-email{color:#6f8796;font-weight:700}
 
 </style>
+
+  <style id="ymnext-mobile-polish">
+  /* YMNEXT_MOBILE_POLISH_V1 */
+  @media (max-width: 780px){
+    html,body{max-width:100%;overflow-x:hidden}
+    body{font-size:15px}
+    .container{width:min(100% - 28px,1180px)}
+    .section{padding:60px 0}
+    .site-header{height:64px}
+    .global-nav{top:64px}
+    .menu-toggle{min-width:44px;min-height:44px;display:grid;place-content:center;padding:8px}
+    .brand-logo{height:34px}
+    .hero{min-height:560px}
+    .hero-inner{min-height:560px}
+    .hero-copy{max-width:100%}
+    .hero h1{font-size:clamp(2.55rem,12vw,3.35rem);line-height:1.15}
+    .hero-lead{font-size:clamp(1.28rem,6vw,1.65rem);line-height:1.55}
+    .hero-sub{font-size:.94rem;line-height:1.85;margin-bottom:24px}
+    .hero-actions{gap:12px}
+    .btn{min-height:50px;padding:0 18px}
+    .section-heading{margin-bottom:24px}
+    .section-note{font-size:.9rem;line-height:1.75}
+    .service-image,.service-art{height:190px}
+    .service-body{padding:18px 18px 22px}
+    .service-body h3{font-size:1.28rem}
+    .service-body p{font-size:.9rem}
+    .price-card{padding:20px 16px}
+    .price-row{padding:15px 0}
+    .price-row p,.other-docs p{font-size:.84rem}
+    .price-amount{font-size:1.65rem;white-space:normal}
+    .mini-price-grid>div{padding:14px}
+    .photo-price-table{border:0;overflow:visible;display:grid;gap:12px}
+    .photo-price-table .table-head{display:none}
+    .photo-price-table .table-row:not(.table-head){
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+      gap:10px 14px;
+      min-height:0;
+      padding:15px;
+      border:1px solid #dae6ea;
+      border-radius:10px;
+      background:#fff;
+    }
+    .photo-price-table .table-row.featured{background:linear-gradient(90deg,#f7fbfb,#eaf6f5)}
+    .photo-price-table .table-row>*{padding:0;border:0!important;min-width:0}
+    .photo-price-table .table-row>*:nth-child(1){
+      grid-column:1/-1;
+      font-weight:700;
+      color:var(--ink-deep);
+      padding-bottom:7px;
+      border-bottom:1px solid #e7eef1!important;
+    }
+    .photo-price-table .table-row>*:nth-child(2){font-size:1rem}
+    .photo-price-table .table-row>*:nth-child(2)::before,
+    .photo-price-table .table-row>*:nth-child(3)::before{
+      display:block;
+      margin-bottom:3px;
+      font-size:.68rem;
+      letter-spacing:.06em;
+      color:#7b929f;
+      font-weight:700;
+    }
+    .photo-price-table .table-row>*:nth-child(2)::before{content:"料金目安"}
+    .photo-price-table .table-row>*:nth-child(3){
+      display:block!important;
+      text-align:right;
+      font-size:.85rem;
+      color:#607887;
+    }
+    .photo-price-table .table-row>*:nth-child(3)::before{content:"想定作業量"}
+    .other-docs{padding:16px}
+    .option-block{padding:24px 18px}
+    .option-list div{padding:12px;align-items:flex-start}
+    .bundle-callout{padding:22px 18px}
+    .bundle-callout p br{display:none}
+    .example-order{padding:22px 16px}
+    .example-order-list>div{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) auto;
+      align-items:start;
+      gap:8px 14px;
+      padding:13px 12px;
+    }
+    .example-order-list strong{white-space:normal;text-align:right}
+    .example-total{padding:15px 14px}
+    .information-box,.exclusion-box{padding:22px 18px}
+    .flow-grid{gap:24px 10px}
+    .flow-step{padding:0 4px}
+    .deadline-card{padding:20px 16px}
+    .faq-list summary{padding-right:34px}
+    .contact-form-wrap{gap:28px}
+    .request-form{padding:20px 16px}
+    .request-form input,
+    .request-form select,
+    .request-form textarea{
+      width:100%;
+      max-width:100%;
+      font-size:16px;
+      min-height:46px;
+    }
+    .request-form textarea{min-height:120px}
+    .checkbox-grid label{min-height:44px}
+    .form-actions{gap:10px}
+    .form-actions .btn{min-height:50px}
+    .contact-email{overflow-wrap:anywhere}
+    .footer-nav{gap:10px 16px}
+  }
+
+  @media (max-width: 480px){
+    .container{width:min(100% - 24px,1180px)}
+    .section{padding:54px 0}
+    .hero{min-height:535px}
+    .hero-inner{min-height:535px}
+    .hero h1{font-size:clamp(2.35rem,13vw,2.95rem)}
+    .hero-lead{font-size:clamp(1.2rem,6.4vw,1.45rem)}
+    .hero-sub{font-size:.9rem;line-height:1.8}
+    .service-image,.service-art{height:170px}
+    .price-card-head{align-items:flex-start}
+    .mini-price-grid>div{gap:10px}
+    .photo-price-table .table-row:not(.table-head){grid-template-columns:1fr}
+    .photo-price-table .table-row>*:nth-child(1),
+    .photo-price-table .table-row>*:nth-child(2),
+    .photo-price-table .table-row>*:nth-child(3){grid-column:1/-1;text-align:left}
+    .example-order-list>div{grid-template-columns:1fr}
+    .example-order-list strong{text-align:left}
+    .example-total{align-items:flex-start;flex-direction:column;gap:4px}
+    .example-total strong{font-size:1.35rem}
+    .option-list div{gap:12px}
+    .option-list strong{white-space:normal;text-align:right}
+    .flow-grid{grid-template-columns:1fr}
+    .flow-step:last-child{grid-column:auto}
+    .contact-form-section{padding:56px 0}
+    .request-form{padding:18px 14px}
+  }
+  </style>
+
 </head>
 <body>
   <header class="site-header" id="top">
