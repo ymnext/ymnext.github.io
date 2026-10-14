@@ -394,6 +394,225 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
   }
   </style>
 
+
+  <style id="ymnext-form-polish">
+  /* YMNEXT_FORM_POLISH_V1 */
+  .request-form{
+    padding:0;
+    overflow:hidden;
+    border-radius:18px;
+    border:1px solid rgba(205,220,227,.9);
+    box-shadow:0 22px 60px rgba(0,0,0,.18);
+  }
+  .form-panel-head{
+    padding:28px 30px 24px;
+    background:linear-gradient(135deg,#f5fafb,#edf6f7);
+    border-bottom:1px solid #dce8ec;
+  }
+  .form-kicker{
+    margin:0 0 6px;
+    font-size:.68rem;
+    letter-spacing:.14em;
+    color:#7891a0;
+    font-weight:800;
+  }
+  .form-panel-head h3{
+    margin:0 0 6px;
+    font-size:1.55rem;
+    color:var(--ink-deep);
+  }
+  .form-panel-head>p:last-child{
+    margin:0;
+    font-size:.86rem;
+    color:#667f8e;
+  }
+  .form-section{
+    display:block;
+    margin:0!important;
+    padding:26px 30px!important;
+    border:0!important;
+    border-bottom:1px solid #e4ecef!important;
+  }
+  .form-section-head{
+    display:flex;
+    align-items:flex-start;
+    gap:13px;
+    margin-bottom:18px;
+  }
+  .form-section-no{
+    flex:0 0 auto;
+    display:grid;
+    place-items:center;
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#e7f4f4;
+    color:var(--teal-dark);
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:.86rem;
+    font-weight:700;
+  }
+  .form-section-head h4,
+  .form-section-head legend{
+    margin:0;
+    padding:0;
+    font-family:var(--serif);
+    font-size:1.05rem;
+    line-height:1.4;
+    font-weight:700;
+    color:var(--ink-deep);
+  }
+  .form-section-head p{
+    margin:3px 0 0;
+    font-size:.78rem;
+    line-height:1.6;
+    color:#7a909d;
+  }
+  .request-form label{
+    display:block;
+    min-width:0;
+    color:#36576a;
+  }
+  .request-form input,
+  .request-form select,
+  .request-form textarea{
+    border:1px solid #cddde3;
+    background:#fbfdfe;
+    border-radius:10px;
+    transition:border-color .2s ease,box-shadow .2s ease,background .2s ease;
+  }
+  .request-form input:hover,
+  .request-form select:hover,
+  .request-form textarea:hover{border-color:#aec7d1;background:#fff}
+  .request-form input:focus,
+  .request-form select:focus,
+  .request-form textarea:focus{
+    outline:none;
+    border-color:var(--teal);
+    box-shadow:0 0 0 3px rgba(17,166,160,.12);
+    background:#fff;
+  }
+  .request-form textarea{resize:vertical}
+  .optional{
+    display:inline-block;
+    margin-left:5px;
+    padding:1px 6px;
+    border-radius:4px;
+    background:#eef3f5;
+    color:#738995;
+    font-size:.65rem;
+    vertical-align:1px;
+    font-weight:700;
+  }
+  .checkbox-grid{gap:10px}
+  .checkbox-grid label{
+    min-height:48px;
+    padding:11px 12px;
+    border:1px solid #d8e5e9;
+    border-radius:10px;
+    background:#fbfdfe;
+    cursor:pointer;
+    transition:.2s ease;
+  }
+  .checkbox-grid label:hover{border-color:#aac8cf;background:#f5fbfb}
+  .checkbox-grid input{
+    width:18px;
+    height:18px;
+    margin:0;
+    accent-color:var(--teal);
+    flex:0 0 auto;
+  }
+  .checkbox-grid label:has(input:checked){
+    border-color:#8dc9c6;
+    background:#eef9f8;
+    color:var(--ink-deep);
+  }
+  .form-field-wide{margin-top:16px!important}
+  .form-section>.form-field-wide:first-of-type{margin-top:0!important}
+  .form-submit-area{
+    padding:26px 30px 28px;
+    background:#f8fbfc;
+  }
+  .form-submit-copy{
+    margin-bottom:18px;
+    padding:14px 16px;
+    border-left:3px solid var(--teal);
+    background:#fff;
+  }
+  .form-submit-copy strong{
+    display:block;
+    margin-bottom:3px;
+    font-size:.9rem;
+    color:var(--ink-deep);
+  }
+  .form-submit-copy p{
+    margin:0;
+    font-size:.78rem;
+    line-height:1.65;
+    color:#718895;
+  }
+  .form-actions{margin-top:0}
+  .btn-ghost-copy{
+    min-height:54px;
+    padding:0 20px;
+    border:1px solid #b8cbd3;
+    border-radius:10px;
+    background:#fff;
+    color:var(--ink);
+    box-shadow:none;
+    font-weight:700;
+    cursor:pointer;
+  }
+  .btn-ghost-copy:hover{background:#f1f6f7}
+  .form-destination{
+    margin:9px 0 0;
+    font-size:.75rem;
+    color:#82949e;
+  }
+  .form-destination a{
+    color:var(--ink);
+    text-decoration:underline;
+    text-underline-offset:3px;
+  }
+  .form-status{margin-top:12px}
+  @media(max-width:900px){
+    .form-panel-head{padding:24px 22px 20px}
+    .form-section{padding:22px!important}
+    .form-submit-area{padding:22px}
+  }
+  @media(max-width:780px){
+    .contact-form-intro{padding:0}
+    .contact-form-intro h2{font-size:2rem}
+    .contact-points{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px}
+    .contact-points p{font-size:.82rem}
+    .request-form{border-radius:14px}
+    .form-panel-head{padding:22px 18px 19px}
+    .form-panel-head h3{font-size:1.35rem}
+    .form-section{padding:20px 18px!important}
+    .form-section-head{margin-bottom:15px}
+    .form-grid{gap:13px}
+    .request-form input,
+    .request-form select,
+    .request-form textarea{margin-top:6px;padding:12px;font-size:16px}
+    .checkbox-grid{grid-template-columns:1fr 1fr!important}
+    .checkbox-grid label{min-height:52px;padding:10px}
+    .form-submit-area{padding:20px 18px 22px}
+    .form-actions{display:grid;grid-template-columns:1fr;gap:10px}
+    .form-actions .btn,
+    .btn-ghost-copy{width:100%;min-height:52px}
+  }
+  @media(max-width:480px){
+    .contact-points{grid-template-columns:1fr}
+    .form-panel-head{padding:20px 16px 18px}
+    .form-section{padding:19px 16px!important}
+    .form-section-head{gap:10px}
+    .form-section-no{width:32px;height:32px}
+    .checkbox-grid{grid-template-columns:1fr!important}
+    .checkbox-grid label{min-height:48px}
+    .form-submit-area{padding:18px 16px 20px}
+  }
+  </style>
+
 </head>
 <body>
   <header class="site-header" id="top">
@@ -823,83 +1042,128 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
         </div>
 
         <form class="request-form" id="request-form">
-          <div class="form-grid">
-            <label>会社名・屋号
-              <input type="text" id="company" placeholder="例：株式会社〇〇" />
-            </label>
-            <label>ご担当者名 <span class="required">必須</span>
-              <input type="text" id="name" required placeholder="例：山田 太郎" />
-            </label>
-            <label>返信先メールアドレス <span class="required">必須</span>
-              <input type="email" id="reply-email" required placeholder="example@company.jp" />
-            </label>
-            <label>お電話番号
-              <input type="tel" id="phone" placeholder="例：090-0000-0000" />
-            </label>
+          <div class="form-panel-head">
+            <p class="form-kicker">REQUEST FORM</p>
+            <h3>ご依頼内容を入力</h3>
+            <p>わかる範囲でご入力ください。<span class="required">必須</span> の項目だけでもご相談いただけます。</p>
           </div>
 
-          <fieldset>
-            <legend>ご依頼内容 <span class="required">必須</span></legend>
+          <section class="form-section" aria-labelledby="form-contact-title">
+            <div class="form-section-head">
+              <span class="form-section-no">01</span>
+              <div>
+                <h4 id="form-contact-title">お客様情報</h4>
+                <p>ご返信に必要な連絡先をご入力ください。</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <label>会社名・屋号 <span class="optional">任意</span>
+                <input type="text" id="company" autocomplete="organization" placeholder="例：株式会社〇〇" />
+              </label>
+              <label>ご担当者名 <span class="required">必須</span>
+                <input type="text" id="name" autocomplete="name" required placeholder="例：山田 太郎" />
+              </label>
+              <label>返信先メールアドレス <span class="required">必須</span>
+                <input type="email" id="reply-email" autocomplete="email" required placeholder="example@company.jp" />
+              </label>
+              <label>お電話番号 <span class="optional">任意</span>
+                <input type="tel" id="phone" autocomplete="tel" inputmode="tel" placeholder="例：090-0000-0000" />
+              </label>
+            </div>
+          </section>
+
+          <fieldset class="form-section">
+            <div class="form-section-head">
+              <span class="form-section-no">02</span>
+              <div>
+                <legend>ご依頼内容 <span class="required">必須</span></legend>
+                <p>該当する項目を複数選択できます。</p>
+              </div>
+            </div>
             <div class="checkbox-grid">
-              <label><input type="checkbox" name="service" value="請求書・見積書作成" /> 請求書・見積書作成</label>
-              <label><input type="checkbox" name="service" value="安全書類作成" /> 安全書類作成</label>
-              <label><input type="checkbox" name="service" value="工事写真台帳作成" /> 工事写真台帳作成</label>
-              <label><input type="checkbox" name="service" value="その他書類作成" /> その他書類作成</label>
-              <label><input type="checkbox" name="service" value="資料作成代行" /> 資料作成代行</label>
-              <label><input type="checkbox" name="service" value="印刷・郵送代行" /> 印刷・郵送代行</label>
+              <label><input type="checkbox" name="service" value="請求書・見積書作成" /> <span>請求書・見積書作成</span></label>
+              <label><input type="checkbox" name="service" value="安全書類作成" /> <span>安全書類作成</span></label>
+              <label><input type="checkbox" name="service" value="工事写真台帳作成" /> <span>工事写真台帳作成</span></label>
+              <label><input type="checkbox" name="service" value="その他書類作成" /> <span>その他書類作成</span></label>
+              <label><input type="checkbox" name="service" value="資料作成代行" /> <span>資料作成代行</span></label>
+              <label><input type="checkbox" name="service" value="印刷・郵送代行" /> <span>印刷・郵送代行</span></label>
             </div>
           </fieldset>
 
-          <label>作成したい内容・ご依頼の詳細 <span class="required">必須</span>
-            <textarea id="details" rows="5" required placeholder="例：見積書1件、安全書類2社分、工事写真台帳50P程度をお願いしたいです。"></textarea>
-          </label>
+          <section class="form-section" aria-labelledby="form-detail-title">
+            <div class="form-section-head">
+              <span class="form-section-no">03</span>
+              <div>
+                <h4 id="form-detail-title">ご依頼の詳細</h4>
+                <p>内容や資料の状態がわかると、よりスムーズにお見積りできます。</p>
+              </div>
+            </div>
+            <label class="form-field-wide">作成したい内容・ご依頼の詳細 <span class="required">必須</span>
+              <textarea id="details" rows="5" required placeholder="例：見積書1件、安全書類2社分、工事写真台帳50P程度をお願いしたいです。"></textarea>
+            </label>
 
-          <label>元となる資料・現在の整理状況
-            <textarea id="source-materials" rows="3" placeholder="例：Excel内訳明細あり／写真は工種別フォルダに整理済み、など"></textarea>
-          </label>
+            <label class="form-field-wide">元となる資料・現在の整理状況 <span class="optional">任意</span>
+              <textarea id="source-materials" rows="3" placeholder="例：Excel内訳明細あり／写真は工種別フォルダに整理済み、など"></textarea>
+            </label>
+          </section>
 
-          <div class="form-grid">
-            <label>希望納期
-              <input type="date" id="due-date" />
+          <section class="form-section" aria-labelledby="form-delivery-title">
+            <div class="form-section-head">
+              <span class="form-section-no">04</span>
+              <div>
+                <h4 id="form-delivery-title">納期・納品方法</h4>
+                <p>未定の場合は空欄・相談希望のままで問題ありません。</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <label>希望納期 <span class="optional">任意</span>
+                <input type="date" id="due-date" />
+              </label>
+              <label>希望納品形式
+                <select id="delivery-format">
+                  <option value="未定・相談希望">未定・相談希望</option>
+                  <option value="PDF">PDF</option>
+                  <option value="Excel">Excel</option>
+                  <option value="Word">Word</option>
+                  <option value="PowerPoint">PowerPoint</option>
+                  <option value="紙での納品・郵送">紙での納品・郵送</option>
+                </select>
+              </label>
+              <label>印刷
+                <select id="print-option">
+                  <option value="不要">不要</option>
+                  <option value="モノクロ">モノクロ</option>
+                  <option value="カラー">カラー</option>
+                  <option value="モノクロ・カラー混在">モノクロ・カラー混在</option>
+                  <option value="相談希望">相談希望</option>
+                </select>
+              </label>
+              <label>郵送
+                <select id="mail-option">
+                  <option value="不要">不要</option>
+                  <option value="希望する">希望する</option>
+                  <option value="相談希望">相談希望</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="form-field-wide">その他・ご質問 <span class="optional">任意</span>
+              <textarea id="notes" rows="3" placeholder="補足事項がございましたらご記入ください。"></textarea>
             </label>
-            <label>希望納品形式
-              <select id="delivery-format">
-                <option value="未定・相談希望">未定・相談希望</option>
-                <option value="PDF">PDF</option>
-                <option value="Excel">Excel</option>
-                <option value="Word">Word</option>
-                <option value="PowerPoint">PowerPoint</option>
-                <option value="紙での納品・郵送">紙での納品・郵送</option>
-              </select>
-            </label>
-            <label>印刷
-              <select id="print-option">
-                <option value="不要">不要</option>
-                <option value="モノクロ">モノクロ</option>
-                <option value="カラー">カラー</option>
-                <option value="モノクロ・カラー混在">モノクロ・カラー混在</option>
-                <option value="相談希望">相談希望</option>
-              </select>
-            </label>
-            <label>郵送
-              <select id="mail-option">
-                <option value="不要">不要</option>
-                <option value="希望する">希望する</option>
-                <option value="相談希望">相談希望</option>
-              </select>
-            </label>
+          </section>
+
+          <div class="form-submit-area">
+            <div class="form-submit-copy">
+              <strong>入力内容をメールにまとめます</strong>
+              <p>ボタンを押すと、お使いのメールアプリに内容を引き継ぎます。このページから直接送信されることはありません。</p>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-mail btn-large" type="submit"><span class="mail-badge">✉</span> メールを作成する <span>›</span></button>
+              <button class="btn btn-ghost-copy" type="button" id="copy-request">入力内容をコピー</button>
+            </div>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+            <p class="form-destination">送信先 <a href="mailto:ymnext.office@gmail.com">ymnext.office@gmail.com</a></p>
           </div>
-
-          <label>その他・ご質問
-            <textarea id="notes" rows="3" placeholder="補足事項がございましたらご記入ください。"></textarea>
-          </label>
-
-          <div class="form-actions">
-            <button class="btn btn-mail btn-large" type="submit"><span class="mail-badge">✉</span> メール作成画面を開く <span>›</span></button>
-            <button class="btn btn-ghost-copy" type="button" id="copy-request">入力内容をコピー</button>
-          </div>
-          <p class="form-status" id="form-status" aria-live="polite"></p>
-          <p class="contact-note dark">送信先：<a href="mailto:ymnext.office@gmail.com">ymnext.office@gmail.com</a></p>
         </form>
       </div>
     </section>
