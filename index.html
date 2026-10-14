@@ -613,6 +613,136 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
   }
   </style>
 
+
+  <style id="ymnext-balance-tune">
+  /* YMNEXT_BALANCE_TUNE_V1 */
+
+  /* Keep desktop composition unchanged. These refinements apply to tablet/mobile only. */
+  @media(max-width:780px){
+    /* HERO: cleaner image treatment and tighter vertical rhythm */
+    .hero{
+      min-height:510px;
+      height:auto;
+    }
+    .hero-inner{
+      min-height:510px;
+      padding:46px 0 42px;
+      align-items:center;
+    }
+    .hero-photo-left{
+      display:block;
+      width:100%;
+      opacity:.34;
+      background-position:center 48%;
+    }
+    .hero-photo-right{display:none}
+    .hero-overlay{
+      background:linear-gradient(180deg,rgba(7,38,55,.68) 0%,rgba(6,37,53,.82) 55%,rgba(5,31,46,.92) 100%);
+    }
+    .hero-copy{
+      width:100%;
+      max-width:430px;
+      margin:0 auto;
+    }
+    .hero-copy .eyebrow{margin-bottom:5px}
+    .hero h1{
+      margin-bottom:8px;
+      font-size:clamp(2.5rem,11vw,3.05rem);
+      line-height:1.08;
+    }
+    .hero-lead{
+      margin-bottom:9px;
+      font-size:clamp(1.24rem,5.8vw,1.48rem);
+      line-height:1.55;
+    }
+    .hero-sub{
+      margin-bottom:22px;
+      font-size:.91rem;
+      line-height:1.78;
+    }
+    .hero-actions{gap:10px}
+    .hero-actions .btn{min-height:50px}
+
+    /* ABOUT: remove the large empty zone and balance copy/image/message */
+    .about{
+      padding:58px 0 62px;
+      min-height:0;
+    }
+    .about-bg{
+      inset:auto 0 0 0;
+      height:46%;
+      opacity:.42;
+      background-position:center 58%;
+    }
+    .about-grid{
+      grid-template-columns:1fr;
+      gap:30px;
+      min-height:0;
+      align-items:start;
+    }
+    .about-copy{max-width:560px}
+    .about-copy h2{margin-bottom:7px}
+    .about-copy .section-rule{margin-top:11px}
+    .about-copy p:not(.eyebrow){
+      margin:18px 0 0;
+      font-size:.96rem;
+      line-height:1.9;
+    }
+    .about-message{
+      justify-self:stretch;
+      width:100%;
+      margin-top:4px;
+      padding:22px 22px;
+      background:rgba(237,247,249,.92);
+      backdrop-filter:blur(7px);
+    }
+    .about-message p{
+      font-size:1.18rem;
+      line-height:1.7;
+    }
+
+    /* FORM: align section number and heading consistently */
+    .form-section-head{
+      align-items:flex-start;
+      gap:11px;
+    }
+    .form-section-head>div{
+      min-width:0;
+      padding-top:2px;
+    }
+    .form-section-head h4{
+      margin:0;
+      line-height:1.35;
+    }
+    .form-section-head h4 .required{
+      vertical-align:2px;
+    }
+  }
+
+  @media(max-width:480px){
+    .hero{
+      min-height:485px;
+    }
+    .hero-inner{
+      min-height:485px;
+      padding:38px 0 36px;
+    }
+    .hero h1{font-size:clamp(2.35rem,12vw,2.8rem)}
+    .hero-lead{font-size:clamp(1.18rem,6vw,1.38rem)}
+    .hero-sub{font-size:.88rem}
+    .about{
+      padding:52px 0 56px;
+    }
+    .about-bg{
+      height:43%;
+      opacity:.36;
+    }
+    .about-grid{gap:26px}
+    .about-message{padding:20px 18px}
+    .about-message p{font-size:1.1rem}
+  }
+  </style>
+
 </head>
 <body>
   <header class="site-header" id="top">
@@ -1072,11 +1202,11 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
             </div>
           </section>
 
-          <fieldset class="form-section">
+          <section class="form-section" aria-labelledby="form-service-title">
             <div class="form-section-head">
               <span class="form-section-no">02</span>
               <div>
-                <legend>ご依頼内容 <span class="required">必須</span></legend>
+                <h4 id="form-service-title">ご依頼内容 <span class="required">必須</span></h4>
                 <p>該当する項目を複数選択できます。</p>
               </div>
             </div>
@@ -1088,7 +1218,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
               <label><input type="checkbox" name="service" value="資料作成代行" /> <span>資料作成代行</span></label>
               <label><input type="checkbox" name="service" value="印刷・郵送代行" /> <span>印刷・郵送代行</span></label>
             </div>
-          </fieldset>
+          </section>
 
           <section class="form-section" aria-labelledby="form-detail-title">
             <div class="form-section-head">
