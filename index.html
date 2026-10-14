@@ -387,6 +387,13 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
   }
   </style>
 
+
+  <style id="ymnext-mobile-reveal-failsafe">
+  @media(max-width:780px){
+    .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  }
+  </style>
+
 </head>
 <body>
   <header class="site-header" id="top">
@@ -984,8 +991,7 @@ ${replyEmail}
 ${phone}
 
 【依頼したいサービス】
-${services.length ? services.map(s => '・' + s).join('
-') : '未選択'}
+${services.length ? services.map(s => '・' + s).join('\\n') : '未選択'}
 
 【作成したい内容・依頼詳細】
 ${details}
