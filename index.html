@@ -775,6 +775,36 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
   }
   </style>
 
+<style id="ymnext-construction-support">
+.construction-support{background:var(--mist)}
+.support-story{max-width:850px;margin:0 auto 48px}
+.support-story h2{font-size:clamp(1.65rem,3vw,2.4rem)}
+.support-prose{margin-top:28px;line-height:1.95}
+.support-prose p{margin-bottom:20px}
+.support-prose p:nth-child(4){font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--ink-deep);border-left:3px solid var(--teal);padding-left:18px;margin:28px 0}
+.support-detail-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;align-items:start}
+.support-detail{background:white;border:1px solid var(--line);padding:32px;min-width:0}
+.support-detail h3{font-size:1.45rem;line-height:1.6;margin-bottom:20px}
+.support-detail p{line-height:1.85}
+.support-job-list{padding-left:1.25em;margin:22px 0}
+.support-job-list li{padding:6px 0}
+.support-job-list li::marker{color:var(--teal-dark)}
+.support-detail .support-scope-note,.service-body .support-scope-note{font-size:.88rem;color:#4f6879;background:#eef5f7;padding:14px 16px;line-height:1.8}
+.support-scope{background:#fff}
+.support-scope-box{padding:36px 40px;background:var(--mist-blue);border:1px solid var(--line);border-radius:12px}
+.support-scope-box h2{font-size:clamp(1.45rem,2.5vw,1.9rem);margin-bottom:24px}
+.support-scope-box p:not(.eyebrow){font-size:.95rem;line-height:1.9;color:#405e71;margin-bottom:18px}
+.support-scope-box p:last-child{margin-bottom:0}
+#construction-support,#support-scope{scroll-margin-top:90px}
+@media(max-width:780px){
+.support-detail-grid{grid-template-columns:1fr;gap:18px}
+.support-detail{padding:24px 20px}
+.support-story{margin-bottom:30px}
+.support-prose{font-size:.96rem}
+.support-detail h3{font-size:1.3rem}
+.support-scope-box{padding:26px 20px}
+}
+</style>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -885,7 +915,8 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
               <p class="service-en">CONSTRUCTION DOCUMENT SUPPORT</p>
               <h3>建設会社向け書類作成代行</h3>
               <p>請求書・見積書、安全書類、工事写真台帳など。現場を知る実務目線で書類業務をサポートします。</p>
-              <a class="card-link" href="#price">料金・詳細を見る <span>›</span></a>
+              <p class="support-scope-note">※ご指定の項目・数量・単価に基づく作成に対応します。数量算出・単価設定は対象外です。</p>
+              <a class="card-link" href="#construction-support">対応業務・実績を見る <span>›</span></a>
             </div>
           </article>
 
@@ -902,6 +933,47 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
         </div>
       </div>
     </section>
+
+    <section class="section construction-support" id="construction-support" aria-labelledby="construction-title">
+<div class="container">
+<article class="support-story">
+<p class="eyebrow">OUR EXPERIENCE &amp; PURPOSE</p>
+<h2 id="construction-title">現場を知っているからこそ、支えたい。</h2>
+<span class="section-rule"></span>
+<div class="support-prose"><p>代表は20代に、マンション大規模修繕工事の現場代理人として、多くの現場に携わってきました。</p>
+<p>現場代理人の仕事は、工事を進めることだけではありません。日々の現場管理に加え、各種書類の作成、関係者との調整、居住者様へのご案内など、その業務は多岐にわたります。</p>
+<p>自身の現場を抱えながら、部下や後輩のフォロー、別部署の応援まで担う。そのような状況で業務が積み重なり、現場運営そのものが滞ってしまう場面を、幾度も見てきました。</p>
+<p>現場を支える人にも、支えが必要です。</p>
+<p>Y’mNEXTは、書類・図面・資料の作成支援を通じて、現場代理人の負担を少しでも軽くし、現場で必要とされる仕事に向き合える時間をつくりたいと考えています。</p>
+<p>培ってきた経験を持つ人が、過度な負担によって仕事を離れずに済むように。現場代理人を支え、人材の定着と無理のない現場運営に貢献することを目指します。</p></div>
+</article>
+<div class="support-detail-grid">
+<article class="support-detail">
+<p class="eyebrow">CONSTRUCTION SUPPORT</p>
+<h3>現場代理人の実務経験を、書類・資料作成の支援に。</h3>
+<p>現場代理人業務全般に携わってきた経験を生かし、マンション大規模修繕工事に関わる書類・資料の作成を支援します。</p>
+<ul class="support-job-list"><li>日報の作成</li>
+<li>KYK・新規入場者記録の作成</li>
+<li>見積書・内訳明細書の作成</li>
+<li>下地補修図の作成、補修CAD図面への数量落とし</li>
+<li>検査記録の作成</li>
+<li>安全書類の作成</li>
+<li>二者・三者定例会議資料の作成</li>
+<li>竣工図書の作成</li></ul>
+<p class="support-scope-note">※ご指定の項目・数量・単価に基づく作成に対応します。数量算出・単価設定は対象外です。</p>
+<p>その他にも作成可能です、まずはご相談ください。</p>
+<p>ご提供いただく現場情報・記録・図面などを基に、対応いたします。必要な情報や作業範囲、納期を確認したうえで、お見積もりいたします。</p>
+</article>
+<article class="support-detail">
+<p class="eyebrow">COMMUNICATION</p>
+<h3>相手に合わせて、伝わる資料を。</h3>
+<p>これまで、マンション管理組合・管理会社・設計監理会社に向けた資料をはじめ、現場作業従事者向けの資料、居住者様へのご案内、お子様向けの工事資料などを作成してきました。</p>
+<p>専門的な情報が必要な方にも、工事になじみのない方にも、必要な内容が伝わるように。読み手の立場に合わせた言葉と構成で、資料を整えます。</p>
+<a class="card-link" href="#support-scope">業務体制・対応範囲を見る <span>›</span></a>
+</article>
+</div>
+</div>
+</section>
 
     <section class="consult-strip" aria-label="ご相談例">
       <div class="container consult-grid reveal">
@@ -1055,6 +1127,8 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
             <li>法律判断を伴う契約書等の作成</li>
             <li>社会保険・労務関係の専門書類作成</li>
             <li>その他、資格者による対応が必要となる業務</li>
+            <li>数量算出・単価設定を伴う内訳明細書の作成</li>
+            <li>現地訪問が必須となる作業</li>
           </ul>
         </div>
 
@@ -1184,6 +1258,20 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
         </div>
       </div>
     </section>
+
+    <section class="section support-scope" id="support-scope" aria-labelledby="support-scope-title">
+<div class="container">
+<div class="support-scope-box">
+<p class="eyebrow">SERVICE SCOPE</p>
+<h2 id="support-scope-title">業務体制・対応範囲について</h2>
+<p>当サービスは、現場代理人・現場担当者の皆様を支える「現場補助スタッフ」として、書類・図面・資料の作成などをお手伝いするものです。現場代理人そのものの代行や、現場管理上の判断・責任を引き受けるものではありません。</p>
+<p>掲載している経歴・経験は代表のものです。実際の作業は代表またはスタッフが担当し、ご依頼内容と担当者の経験・対応能力に応じて、お引き受けする業務範囲を事前に確認いたします。</p>
+<p>作業は、ご依頼主様から提供いただいた情報・資料・ご指示に基づいて行います。完成した書類・図面・資料は、ご依頼主様に内容をご確認いただいたうえでご使用ください。</p>
+<p>見積書・内訳明細書は、ご指定の項目・数量・単価に基づく入力・整理・書式作成、および既存PDFのExcel化に対応します。数量の算出や単価の設定は対象外です。</p>
+<p>また、資格者による対応が必要な業務、法律判断を伴う書類作成・申請代理、現地訪問が必須となる作業はお引き受けしておりません。</p>
+</div>
+</div>
+</section>
 
     <section class="contact contact-form-section" id="contact">
       <div class="contact-overlay" aria-hidden="true"></div>
