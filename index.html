@@ -805,6 +805,26 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
 .support-scope-box{padding:26px 20px}
 }
 </style>
+
+  <style id="ymnext-pricing-process-update">
+    /* 2026-10: confirmed client-facing pricing and reporting policy */
+    .pricing-assurances{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:0 0 34px}
+    .pricing-assurance{background:#f7fafb;border:1px solid #dbe6ea;border-radius:14px;padding:23px 22px}
+    .pricing-assurance-label{display:block;margin-bottom:12px;color:#078e89;font-weight:700;font-size:.69rem;letter-spacing:.1em}
+    .pricing-assurance h3{font-size:1.06rem;margin:0 0 10px}
+    .pricing-assurance p{font-size:.88rem;line-height:1.85;color:#617988;margin:0}
+    .flow-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 20px}
+    .flow-grid:before{display:none}
+    @media(max-width:780px){
+      .pricing-assurances{grid-template-columns:1fr;gap:12px;margin-bottom:26px}
+      .pricing-assurance{padding:20px 18px}
+      .flow-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 12px}
+      .flow-step:last-child{grid-column:auto}
+    }
+    @media(max-width:520px){
+      .flow-grid{grid-template-columns:1fr;gap:24px}
+    }
+  </style>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -999,7 +1019,25 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
             <p class="eyebrow">PRICE</p>
             <h2>建設会社向け<br>書類作成代行 料金表</h2>
           </div>
-          <p class="section-note">料金は作業量を基準に算定。内容が明確な業務は商品価格でわかりやすくご提示します。<br><strong>※表示価格はすべて税抜です。</strong></p>
+          <p class="section-note">掲載料金は目安です。ご依頼内容・作業範囲を確認し、着手前に料金の下限と上限をご案内します。<br><strong>※表示価格はすべて税抜です。</strong></p>
+        </div>
+
+        <div class="pricing-assurances reveal" aria-label="料金に関する3つのお約束">
+          <article class="pricing-assurance">
+            <span class="pricing-assurance-label">01 / FREE CONSULTATION</span>
+            <h3>ご相談・お打ち合わせは無料</h3>
+            <p>ご依頼前も作業中も、お打ち合わせ自体に料金はかかりません。新たな作業が必要になる場合は、別途ご案内します。</p>
+          </article>
+          <article class="pricing-assurance">
+            <span class="pricing-assurance-label">02 / PRICE CAP</span>
+            <h3>料金の上限を事前にご案内</h3>
+            <p>作業範囲を確認して下限・上限金額を提示します。合意した範囲内の作業は、上限金額を超えて請求しません。</p>
+          </article>
+          <article class="pricing-assurance">
+            <span class="pricing-assurance-label">03 / PROGRESS REPORT</span>
+            <h3>作業途中に金額をご報告</h3>
+            <p>進捗と残作業を確認し、最終請求予定額をご案内します。大幅な仕様変更等がなければ、原則その金額でご請求します。</p>
+          </article>
         </div>
 
         <div class="price-cards">
@@ -1021,11 +1059,11 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
             <div class="price-row">
               <div>
                 <strong>専門的な作成</strong>
-                <p>内訳明細書等の読解、内容整理、打合せを伴う作成。</p>
+                <p>内訳明細書等の読解や内容整理など、専門知識を必要とする作成。</p>
               </div>
               <div class="price-amount">10,000<span>円～</span></div>
             </div>
-            <p class="price-note">※追加作業・大幅な修正・複数回のお打合せが必要な場合は別途お見積りします。</p>
+            <p class="price-note">※お打ち合わせ・お見積もりは無料です。ご相談により仕様変更や追加作業が生じる場合は、作業内容と追加料金を事前にご案内し、ご了承後に対応します。</p>
           </article>
 
           <article class="price-card reveal">
@@ -1152,7 +1190,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
             <p class="eyebrow">FLOW</p>
             <h2>ご依頼の流れ</h2>
           </div>
-          <p class="section-note">内容確認後、作業量と料金をご案内してから着手します。</p>
+          <p class="section-note">ご相談・お見積もりは無料。料金の下限・上限にご納得いただいてから着手し、作業途中にもご報告します。</p>
         </div>
 
         <div class="flow-grid">
@@ -1171,20 +1209,26 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
           <div class="flow-step reveal">
             <span class="step-no">03</span>
             <div class="flow-icon">💴</div>
-            <h3>お見積り</h3>
-            <p>料金・納期をご案内します。</p>
+            <h3>お見積り・ご確認</h3>
+            <p>作業範囲、料金の下限・上限、納期を提示します。</p>
           </div>
           <div class="flow-step reveal">
             <span class="step-no">04</span>
             <div class="flow-icon">⚙</div>
             <h3>作業</h3>
-            <p>ご依頼内容に沿って作成します。</p>
+            <p>合意いただいた内容に沿って進めます。</p>
           </div>
           <div class="flow-step reveal">
             <span class="step-no">05</span>
+            <div class="flow-icon">▤</div>
+            <h3>中間報告</h3>
+            <p>進捗と最終請求予定額をお知らせします。</p>
+          </div>
+          <div class="flow-step reveal">
+            <span class="step-no">06</span>
             <div class="flow-icon">✓</div>
-            <h3>納品・発送</h3>
-            <p>データ納品、必要に応じて郵送します。</p>
+            <h3>納品・精算</h3>
+            <p>納品後、原則として報告した金額でご請求します。</p>
           </div>
         </div>
       </div>
@@ -1235,6 +1279,18 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
           <span class="section-rule"></span>
         </div>
         <div class="faq-list">
+          <details class="reveal">
+            <summary>相談や打ち合わせに料金はかかりますか？</summary>
+            <p>ご相談・お打ち合わせ・お見積もりは原則無料です。打ち合わせによって新たな書類作成や仕様変更が必要になった場合は、実際に増える作業について事前にお見積もりします。</p>
+          </details>
+          <details class="reveal">
+            <summary>見積もりの上限より高く請求されることはありますか？</summary>
+            <p>事前に合意した作業範囲については、上限金額を超えて請求しません。書類の追加や大幅な仕様変更が必要な場合は、必ず追加作業の前に内容と料金をご相談します。</p>
+          </details>
+          <details class="reveal">
+            <summary>作業途中に、最終的な請求予定額は分かりますか？</summary>
+            <p>原則として中間報告の際に、進捗・残作業とあわせて最終請求予定額をお伝えします。大幅な仕様変更などがなければ、ご案内した金額でのご請求を基本としています。</p>
+          </details>
           <details class="reveal">
             <summary>書類作成から郵送まで全部お願いできますか？</summary>
             <p>はい。対象書類であれば、作成・印刷・封入・発送までまとめて対応できます。印刷枚数や発送方法に応じて別途費用をご案内します。</p>
