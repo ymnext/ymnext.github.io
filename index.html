@@ -923,7 +923,8 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
               <div class="service-no">01</div>
               <p class="service-en">DOCUMENT &amp; MAIL SUPPORT</p>
               <h3>文書作成・郵送代行</h3>
-              <p>請求書、見積書などの文書作成から、印刷・封入・郵送までまとめて対応します。</p>
+              <p>請求書、見積書などの文書作成に加え、ご希望に応じて印刷・封入・郵送まで一括対応します。</p>
+              <p class="support-scope-note">※印刷・ファイリング・発送は書類作成に付随するオプションです。単独でのご依頼は承っておりません。</p>
               <a class="card-link" href="#price">料金・詳細を見る <span>›</span></a>
             </div>
           </article>
@@ -1048,20 +1049,20 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
           <div class="flow-step reveal">
             <span class="step-no">03</span>
             <div class="flow-icon">💴</div>
-            <h3>お見積り・ご確認</h3>
+            <h3>お見積もり・ご確認</h3>
             <p>作業範囲、料金の下限・上限、納期を提示します。</p>
           </div>
           <div class="flow-step reveal">
             <span class="step-no">04</span>
-            <div class="flow-icon">⚙</div>
-            <h3>作業</h3>
-            <p>合意いただいた内容に沿って進めます。</p>
+            <div class="flow-icon">✓</div>
+            <h3>正式発注の確認</h3>
+            <p>発注確認書（PDF）とメールで発注内容・承諾を確認してから着手します。</p>
           </div>
           <div class="flow-step reveal">
             <span class="step-no">05</span>
             <div class="flow-icon">▤</div>
-            <h3>中間報告</h3>
-            <p>進捗と最終請求予定額をお知らせします。</p>
+            <h3>作業・中間報告</h3>
+            <p>合意した内容で作業し、進捗と最終請求予定額をご案内します。</p>
           </div>
           <div class="flow-step reveal">
             <span class="step-no">06</span>
@@ -1132,7 +1133,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
           </details>
           <details class="reveal">
             <summary>書類作成から郵送まで全部お願いできますか？</summary>
-            <p>はい。対象書類であれば、作成・印刷・封入・発送までまとめて対応できます。印刷枚数や発送方法に応じて別途費用をご案内します。</p>
+            <p>はい。対象書類の作成とセットで、印刷・ファイリング・封入・発送までまとめて対応できます。印刷や発送のみのご依頼は承っておりません。印刷枚数や発送方法に応じて別途費用をご案内します。</p>
           </details>
           <details class="reveal">
             <summary>安全書類は何社分でも依頼できますか？</summary>
@@ -1222,7 +1223,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
               <span class="form-section-no">02</span>
               <div>
                 <h4 id="form-service-title">ご依頼内容 <span class="required">必須</span></h4>
-                <p>該当する項目を複数選択できます。</p>
+                <p>該当する書類作成サービスを複数選択できます。印刷・ファイリング・郵送は下記「納期・納品方法」でご相談ください（書類作成とセットでのみ対応）。</p>
               </div>
             </div>
             <div class="checkbox-grid">
@@ -1231,7 +1232,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
               <label><input type="checkbox" name="service" value="工事写真台帳作成" /> <span>工事写真台帳作成</span></label>
               <label><input type="checkbox" name="service" value="その他書類作成" /> <span>その他書類作成</span></label>
               <label><input type="checkbox" name="service" value="資料作成代行" /> <span>資料作成代行</span></label>
-              <label><input type="checkbox" name="service" value="印刷・郵送代行" /> <span>印刷・郵送代行</span></label>
+              
             </div>
           </section>
 
@@ -1257,7 +1258,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
               <span class="form-section-no">04</span>
               <div>
                 <h4 id="form-delivery-title">納期・納品方法</h4>
-                <p>未定の場合は空欄・相談希望のままで問題ありません。</p>
+                <p>未定の場合は空欄・相談希望のままで問題ありません。印刷・ファイリング・郵送は書類作成の付帯オプションです。</p>
               </div>
             </div>
             <div class="form-grid">
@@ -1283,10 +1284,12 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
                   <option value="相談希望">相談希望</option>
                 </select>
               </label>
-              <label>郵送
+              <label>ファイリング・郵送
                 <select id="mail-option">
                   <option value="不要">不要</option>
-                  <option value="希望する">希望する</option>
+                  <option value="郵送を希望する">郵送を希望する</option>
+                  <option value="ファイリングを希望する">ファイリングを希望する</option>
+                  <option value="ファイリング・郵送の両方を希望する">ファイリング・郵送の両方を希望する</option>
                   <option value="相談希望">相談希望</option>
                 </select>
               </label>
@@ -1417,7 +1420,7 @@ ${deliveryFormat}
 【印刷】
 ${printOption}
 
-【郵送】
+【ファイリング・郵送】
 ${mailOption}
 
 【その他・質問】
