@@ -250,6 +250,15 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
 .contact-note.dark a{font-weight:700;color:var(--ink-deep);text-decoration:underline;text-underline-offset:3px}
 .footer-email{color:#6f8796;font-weight:700}
 
+
+/* Compact terms link between enquiry and service scope */
+.terms-teaser{padding:36px 0;background:#f6fafb}
+.terms-teaser-inner{display:flex;align-items:center;gap:20px;border:1px solid #d7e7ea;border-radius:12px;background:#fff;padding:24px 29px;box-shadow:0 6px 22px rgba(20,54,76,.045)}
+.terms-teaser-icon{flex:0 0 42px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#078e89;background:#eaf7f6;font-weight:800;font-size:1.12rem}
+.terms-teaser-copy{flex:1;min-width:0}.terms-teaser-copy .eyebrow{margin:0 0 3px;font-size:.67rem;color:#83a0ac}.terms-teaser-copy h2{font-family:var(--serif);font-size:1.17rem;margin:0 0 5px}.terms-teaser-copy p:last-child{font-size:.84rem;color:#698392;margin:0;line-height:1.65}
+.terms-teaser-link{flex:0 0 auto;display:inline-flex;align-items:center;gap:10px;padding:10px 15px;border-radius:8px;border:1px solid #aecbd0;font-size:.82rem;font-weight:700;color:#156a75;background:#fff;transition:background .2s}.terms-teaser-link:hover{background:#eef8f7}
+#terms{scroll-margin-top:84px}
+@media(max-width:750px){.terms-teaser{padding:24px 0}.terms-teaser-inner{padding:20px;gap:13px;flex-wrap:wrap}.terms-teaser-icon{width:34px;height:34px;flex-basis:34px}.terms-teaser-copy{flex:1 1 calc(100% - 47px)}.terms-teaser-copy h2{font-size:1.06rem}.terms-teaser-link{margin-left:47px}}
 </style>
 
   <style id="ymnext-mobile-polish">
@@ -1155,20 +1164,6 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
       </div>
     </section>
 
-    <section class="section support-scope" id="support-scope" aria-labelledby="support-scope-title">
-<div class="container">
-<div class="support-scope-box">
-<p class="eyebrow">SERVICE SCOPE</p>
-<h2 id="support-scope-title">業務体制・対応範囲について</h2>
-<p>当サービスは、現場代理人・現場担当者の皆様を支える「現場補助スタッフ」として、書類・図面・資料の作成などをお手伝いするものです。現場代理人そのものの代行や、現場管理上の判断・責任を引き受けるものではありません。</p>
-<p>掲載している経歴・経験は代表のものです。実際の作業は代表またはスタッフが担当し、ご依頼内容と担当者の経験・対応能力に応じて、お引き受けする業務範囲を事前に確認いたします。</p>
-<p>作業は、ご依頼主様から提供いただいた情報・資料・ご指示に基づいて行います。完成した書類・図面・資料は、ご依頼主様に内容をご確認いただいたうえでご使用ください。</p>
-<p>見積書・内訳明細書は、ご指定の項目・数量・単価に基づく入力・整理・書式作成、および既存PDFのExcel化に対応します。数量の算出や単価の設定は対象外です。</p>
-<p>また、資格者による対応が必要な業務、法律判断を伴う書類作成・申請代理、現地訪問が必須となる作業はお引き受けしておりません。</p>
-</div>
-</div>
-</section>
-
     <section class="contact contact-form-section" id="contact">
       <div class="contact-overlay" aria-hidden="true"></div>
       <div class="container contact-form-wrap reveal">
@@ -1315,6 +1310,34 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
         </form>
       </div>
     </section>
+
+    <section class="terms-teaser" id="terms" aria-labelledby="terms-teaser-title">
+  <div class="container">
+    <div class="terms-teaser-inner reveal">
+      <div class="terms-teaser-icon" aria-hidden="true">✓</div>
+      <div class="terms-teaser-copy">
+        <p class="eyebrow">TERMS &amp; CONDITIONS</p>
+        <h2 id="terms-teaser-title">ご利用条件・取引について</h2>
+        <p>料金・お支払い・修正対応・資料の取扱いなど、ご依頼前に確認いただきたい事項をご案内しています。</p>
+      </div>
+      <a class="terms-teaser-link" href="terms.html">ご利用条件を見る <span aria-hidden="true">›</span></a>
+    </div>
+  </div>
+</section>
+
+    <section class="section support-scope" id="support-scope" aria-labelledby="support-scope-title">
+<div class="container">
+<div class="support-scope-box">
+<p class="eyebrow">SERVICE SCOPE</p>
+<h2 id="support-scope-title">業務体制・対応範囲について</h2>
+<p>当サービスは、現場代理人・現場担当者の皆様を支える「現場補助スタッフ」として、書類・図面・資料の作成などをお手伝いするものです。現場代理人そのものの代行や、現場管理上の判断・責任を引き受けるものではありません。</p>
+<p>掲載している経歴・経験は代表のものです。実際の作業は代表またはスタッフが担当し、ご依頼内容と担当者の経験・対応能力に応じて、お引き受けする業務範囲を事前に確認いたします。</p>
+<p>作業は、ご依頼主様から提供いただいた情報・資料・ご指示に基づいて行います。完成した書類・図面・資料は、ご依頼主様に内容をご確認いただいたうえでご使用ください。</p>
+<p>見積書・内訳明細書は、ご指定の項目・数量・単価に基づく入力・整理・書式作成、および既存PDFのExcel化に対応します。数量の算出や単価の設定は対象外です。</p>
+<p>また、資格者による対応が必要な業務、法律判断を伴う書類作成・申請代理、現地訪問が必須となる作業はお引き受けしておりません。</p>
+</div>
+</div>
+</section>
   </main>
 
   <footer class="site-footer">
@@ -1329,6 +1352,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
         <a href="#deadline">納期</a>
         <a href="#faq">よくあるご質問</a>
         <a href="#contact">メール依頼</a>
+              <a href="terms.html">ご利用条件</a>
       </nav>
       <p class="copyright"><a class="footer-email" href="mailto:ymnext.office@gmail.com">ymnext.office@gmail.com</a><br>© Y’mNEXT. All rights reserved.</p>
     </div>
