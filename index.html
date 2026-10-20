@@ -851,6 +851,21 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
       .flow-grid{grid-template-columns:1fr;gap:24px}
     }
   </style>
+  <style id="ymnext-training-feature">
+    .hero-sub-secondary{display:block;margin-top:7px;font-size:.92em;color:rgba(255,255,255,.82)}
+    .training-feature{display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.6fr);gap:28px;margin:32px 0 0;padding:32px 36px;background:#fff;border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:0 10px 10px 0}
+    .training-feature-heading h3{font-size:clamp(1.22rem,2vw,1.55rem);line-height:1.6;margin:6px 0 0}
+    .training-feature .eyebrow{font-size:.7rem}
+    .training-feature-content p{margin:0 0 13px;font-size:.92rem;line-height:1.92;color:#496578}
+    .training-feature-content p:last-child{margin-bottom:0}
+    .training-feature-content .training-feature-principle{font-family:var(--serif);font-weight:600;color:var(--ink-deep);line-height:1.8;margin:18px 0 10px}
+    @media(max-width:780px){
+      .training-feature{grid-template-columns:1fr;gap:14px;margin-top:22px;padding:25px 22px}
+      .training-feature-heading h3{font-size:1.32rem}
+      .training-feature-content p{font-size:.9rem}
+      .hero-sub-secondary{margin-top:8px}
+    }
+  </style>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -889,7 +904,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
           <p class="eyebrow light">PERSONAL &amp; BUSINESS SUPPORT</p>
           <h1 id="hero-title">Y’mNEXT</h1>
           <p class="hero-lead">「ちょっと困った」を、<br>形にする実務サポート。</p>
-          <p class="hero-sub">文書作成・建設事務・資料づくり。<br>必要なところだけ、実務を支えます。</p>
+          <p class="hero-sub">建設現場で培った専門知識と実務経験を活かし、<br>建設書類・安全書類・工事写真台帳の作成を支援。<span class="hero-sub-secondary">一般的な文書作成や営業資料づくりにも対応します。</span></p>
           <div class="hero-actions">
             <a class="btn btn-mail" href="#contact"><span class="mail-badge">✉</span> メールで依頼する <span>›</span></a>
             <a class="btn btn-ghost" href="#services">サービスを見る <span>›</span></a>
@@ -1019,6 +1034,21 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
 <a class="card-link" href="#support-scope">業務体制・対応範囲を見る <span>›</span></a>
 </article>
 </div>
+<article class="training-feature" aria-labelledby="training-title">
+  <div class="training-feature-heading">
+    <p class="eyebrow">TRAINING &amp; QUALITY</p>
+    <h3 id="training-title">現場で培った技術を、次の支援へ。</h3>
+  </div>
+  <div class="training-feature-content">
+    <p>Y’mNEXTでは、マンション大規模修繕工事の現場代理人として培った代表の専門知識と実務経験を基盤に、スタッフへの社内教育にも力を入れています。</p>
+    <p>教育の対象は、単なるパソコン操作や書類への入力方法だけではありません。</p>
+    <p>工事の流れや工程管理、安全管理に関する知識、専門用語、各種書類の目的や使用場面など、建設現場の実務に関する理解を深めるとともに、Excelをはじめとした書類作成技術、情報の整理、書式の構成、正確な入力・確認作業についても教育を行っています。</p>
+    <p class="training-feature-principle">書類の形を整えるだけでなく、その書類が現場でどのように使われるのかを理解すること。</p>
+    <p>私たちは、この考え方を大切にしています。</p>
+    <p>担当スタッフの経験や習熟度に応じて業務範囲を判断し、必要に応じて代表が確認・指導を行うことで、実務に即した対応と継続的な品質向上に取り組んでいます。</p>
+    <p>現場を知る経験と、その経験を次の人材へ伝える教育体制を通じて、お客様の業務負担を軽減できる実務支援サービスを目指しています。</p>
+  </div>
+</article>
 </div>
 </section>
 
