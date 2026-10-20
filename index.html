@@ -259,6 +259,23 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
 .terms-teaser-link{flex:0 0 auto;display:inline-flex;align-items:center;gap:10px;padding:10px 15px;border-radius:8px;border:1px solid #aecbd0;font-size:.82rem;font-weight:700;color:#156a75;background:#fff;transition:background .2s}.terms-teaser-link:hover{background:#eef8f7}
 #terms{scroll-margin-top:84px}
 @media(max-width:750px){.terms-teaser{padding:24px 0}.terms-teaser-inner{padding:20px;gap:13px;flex-wrap:wrap}.terms-teaser-icon{width:34px;height:34px;flex-basis:34px}.terms-teaser-copy{flex:1 1 calc(100% - 47px)}.terms-teaser-copy h2{font-size:1.06rem}.terms-teaser-link{margin-left:47px}}
+
+/* compact, low-key sample preview between pricing and workflow */
+.work-samples-teaser{background:#f6fafb;padding:37px 0;border-top:1px solid #e8f0f2;border-bottom:1px solid #e8f0f2}
+.work-samples-inner{display:flex;align-items:center;gap:24px}
+.work-samples-preview{flex:0 0 132px;height:99px;position:relative}
+.work-samples-preview img{position:absolute;object-fit:cover;object-position:top;width:76px;height:88px;background:white;border:1px solid #d9e5e9;border-radius:4px;box-shadow:0 3px 10px rgba(20,54,76,.08)}
+.work-samples-preview img:first-child{top:0;left:3px;transform:rotate(-7deg)}
+.work-samples-preview img:last-child{top:10px;left:49px;transform:rotate(6deg)}
+.work-samples-text{flex:1;min-width:0}
+.work-samples-text .eyebrow{font-size:.68rem;color:#85a0aa;margin:0 0 4px}
+.work-samples-text h2{font-family:"Noto Serif JP","Yu Mincho",serif;font-size:1.35rem;margin:0 0 7px;line-height:1.5}
+.work-samples-text p:last-child{color:#6a8490;font-size:.85rem;line-height:1.75;margin:0}
+.work-samples-cta{flex:0 0 auto;border:1px solid #aecbd0;color:#116b76;border-radius:8px;padding:12px 19px;text-decoration:none;font-weight:700;font-size:.85rem;background:white}
+.work-samples-cta:hover{background:#edf7f7}
+#work-samples{scroll-margin-top:84px}
+@media(max-width:750px){.work-samples-teaser{padding:26px 0}.work-samples-inner{gap:13px;flex-wrap:wrap}.work-samples-preview{flex-basis:90px;height:90px}.work-samples-preview img{width:56px;height:78px}.work-samples-preview img:last-child{left:28px}.work-samples-text{flex:1 1 calc(100% - 103px)}.work-samples-text h2{font-size:1.16rem}.work-samples-text p:last-child{font-size:.8rem}.work-samples-cta{margin-left:103px;padding:10px 15px}}
+@media(max-width:390px){.work-samples-preview{flex-basis:64px}.work-samples-preview img{width:48px;height:68px}.work-samples-preview img:last-child{left:20px}.work-samples-text{flex-basis:calc(100% - 80px)}.work-samples-cta{margin-left:0;width:100%;text-align:center}}
 </style>
 
   <style id="ymnext-mobile-polish">
@@ -1032,6 +1049,21 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
 <div class="bundle-callout reveal"><div><span class="bundle-badge">PRICE GUIDE</span><h3>詳しい料金・オプションはこちら</h3><p>写真枚数別の参考料金、複数業務のご依頼例、印刷・ファイリング・発送の料金まで掲載しています。<br>最低受注金額は5,000円。表示金額に消費税相当額は別途加算しません。適格請求書（インボイス）は発行しておりません。</p></div><a class="btn btn-outline" href="pricing.html">料金表を詳しく見る <span>›</span></a></div>
 </div></section>
 
+    <section class="work-samples-teaser" id="work-samples" aria-labelledby="work-samples-title">
+  <div class="container work-samples-inner reveal">
+    <div class="work-samples-preview" aria-hidden="true">
+      <img src="samples/estimate-details-thumb.jpg" alt="" loading="lazy">
+      <img src="samples/construction-photos-thumb.jpg" alt="" loading="lazy">
+    </div>
+    <div class="work-samples-text">
+      <p class="eyebrow">WORK SAMPLES</p>
+      <h2 id="work-samples-title">制作サンプル</h2>
+      <p>内訳明細書・作業員名簿・工事写真台帳の制作例を、PDFでご覧いただけます。</p>
+    </div>
+    <a href="samples.html" class="work-samples-cta">制作サンプルを見る <span aria-hidden="true">›</span></a>
+  </div>
+</section>
+
     <section class="section flow" id="flow">
       <div class="container">
         <div class="section-heading reveal">
@@ -1353,6 +1385,7 @@ h2{font-size:clamp(1.8rem,3vw,2.55rem);margin-bottom:8px}
         <a href="#faq">よくあるご質問</a>
         <a href="#contact">メール依頼</a>
               <a href="terms.html">ご利用条件</a>
+              <a href="samples.html">制作サンプル</a>
       </nav>
       <p class="copyright"><a class="footer-email" href="mailto:ymnext.office@gmail.com">ymnext.office@gmail.com</a><br>© Y’mNEXT. All rights reserved.</p>
     </div>
