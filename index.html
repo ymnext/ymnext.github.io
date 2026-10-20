@@ -1426,7 +1426,7 @@ const requestForm = document.getElementById('request-form');
 const copyRequestBtn = document.getElementById('copy-request');
 const formStatus = document.getElementById('form-status');
 
-// 公開前にY'mNEXTの受付用メールアドレスを設定してください。
+// ご依頼メールの宛先（サイト掲載の受付メールアドレスと同じものを指定）
 const YM_NEXT_RECIPIENT = 'ymnext.office@gmail.com';
 
 function buildRequestMail() {
@@ -1460,7 +1460,7 @@ ${replyEmail}
 ${phone}
 
 【依頼したいサービス】
-${services.length ? services.map(s => '・' + s).join('\\n') : '未選択'}
+${services.length ? services.map(s => '・' + s).join('\n') : '未選択'}
 
 【作成したい内容・依頼詳細】
 ${details}
@@ -1500,7 +1500,7 @@ if (requestForm) {
       if (formStatus) formStatus.textContent = '必須項目と、ご依頼内容を1つ以上選択してください。';
       return;
     }
-    const mailto = `mailto:${encodeURIComponent(YM_NEXT_RECIPIENT)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:${YM_NEXT_RECIPIENT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
     if (formStatus) formStatus.textContent = 'メール作成画面を開きます。開かない場合は「入力内容をコピー」をご利用ください。';
   });
