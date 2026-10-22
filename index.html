@@ -451,6 +451,26 @@ body{background:#f7f9fa;color:var(--brand-ink)}
 @media(max-width:780px){.specialist-consult{flex-direction:column;align-items:stretch;padding:23px 21px;margin:22px 0 5px;gap:16px}.specialist-consult-link{align-self:flex-start}}
 @media(max-width:520px){.specialist-consult-link{align-self:stretch}}
 </style>
+
+<style id="ymnext-hero-quick-navigation">
+/* 2026-10-22: homepage's three primary routes */
+.hero-photo-card.hero-link-panel{height:410px;min-height:410px;position:relative;isolation:isolate;overflow:hidden;border:1px solid rgba(158,209,211,.42);border-radius:5px 56px 5px 5px;background:#123d51}
+.hero-link-panel .hero-photo-card-shot{opacity:.34;pointer-events:none;filter:saturate(.8) contrast(1.02)}
+.hero-link-panel:after{content:"";position:absolute;z-index:0;inset:0;background:linear-gradient(125deg,rgba(6,33,53,.91),rgba(6,48,65,.83))}
+.hero-links-content{position:relative;z-index:2;display:flex;flex-direction:column;gap:11px;height:100%;padding:25px 27px 28px}
+.hero-links-title{margin:0 0 2px;color:#a9deda;font-size:10px;letter-spacing:.18em;font-weight:800}
+.hero-links-title span{font-size:11px;letter-spacing:.07em;color:#d6eeee;margin-left:9px}
+.hero-action-link{display:flex;align-items:center;gap:13px;flex:1;min-height:0;padding:13px 15px;color:#fff;background:rgba(10,60,78,.72);border:1px solid rgba(207,234,234,.24);border-radius:8px;transition:background .2s ease,transform .2s ease,border-color .2s ease}
+.hero-action-link:hover,.hero-action-link:focus-visible{background:rgba(16,106,117,.92);border-color:rgba(173,237,230,.8);transform:translateX(3px)}
+.hero-action-number{font:700 14px/1 Georgia,serif;color:#8cddd7;flex:0 0 24px}
+.hero-action-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:5px}
+.hero-action-copy strong{font:600 clamp(15px,1.4vw,18px)/1.5 var(--serif);letter-spacing:.015em;color:#fff}
+.hero-action-copy small{font-size:10.5px;line-height:1.55;letter-spacing:.02em;color:#c1dcdf}
+.hero-action-arrow{font-size:19px;line-height:1;color:#a5e6df}
+@media(max-width:850px){.hero-photo-card.hero-link-panel{max-width:580px;width:100%;height:400px;min-height:400px}}
+@media(max-width:600px){.hero-photo-card.hero-link-panel{height:385px;min-height:385px;border-radius:4px 43px 4px 4px}.hero-links-content{padding:22px 17px;gap:9px}.hero-action-link{padding:10px 12px;gap:11px}.hero-action-copy strong{font-size:16px}.hero-action-copy small{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.hero-action-link{transition:none}}
+</style>
 </head>
 <body>
   <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden"><defs>
@@ -477,10 +497,15 @@ body{background:#f7f9fa;color:var(--brand-ink)}
           <div class="hero-actions"><a class="button button-primary" href="#services">対応業務を見る <span class="arrow">↗</span></a><a class="button button-light" href="#contact">無料で相談する <span class="arrow">→</span></a></div>
           <div class="hero-meta"><span>ご相談・お見積もり無料</span><span>事前に料金上限をご案内</span><span>PDF・Excel等で納品</span></div>
         </div>
-        <div class="hero-photo-card" aria-label="マンション大規模修繕の現場と建設書類をイメージした写真">
-  <div class="hero-photo-card-shot" role="img" aria-label="マンション建物の写真"></div>
-  <div class="hero-photo-card-caption"><span>FIELD-BASED EXPERTISE</span><strong>現場で培った経験を、書類の品質へ。</strong><small>Construction Documentation &amp; Business Support</small></div>
-</div>
+        <nav class="hero-photo-card hero-link-panel" aria-label="主要なご案内">
+  <div class="hero-photo-card-shot" aria-hidden="true"></div>
+  <div class="hero-links-content">
+    <p class="hero-links-title">EXPLORE Y’mNEXT <span>ご案内</span></p>
+    <a class="hero-action-link" href="#services"><span class="hero-action-number">01</span><span class="hero-action-copy"><strong>対応業務について</strong><small>建設書類・事務・資料作成のサービス</small></span><span class="hero-action-arrow" aria-hidden="true">↗</span></a>
+    <a class="hero-action-link" href="pricing.html"><span class="hero-action-number">02</span><span class="hero-action-copy"><strong>料金・お見積もりについて</strong><small>料金の目安と、事前に決める上限金額</small></span><span class="hero-action-arrow" aria-hidden="true">↗</span></a>
+    <a class="hero-action-link" href="samples.html"><span class="hero-action-number">03</span><span class="hero-action-copy"><strong>制作サンプルを見る</strong><small>制作例のご紹介とPDFサンプル</small></span><span class="hero-action-arrow" aria-hidden="true">↗</span></a>
+  </div>
+</nav>
       </div>
     </section>
     <div class="intro-strip" aria-label="Y’mNEXTの特徴"><div class="container intro-grid"><div class="intro-cell">現場目線の書類作成を、必要な分だけ。</div><div class="intro-cell"><span class="intro-symbol">✓</span>現場代理人の経験</div><div class="intro-cell"><span class="intro-symbol">✓</span>社内での技術教育</div><div class="intro-cell"><span class="intro-symbol">✓</span>明確な料金の上限</div></div></div>
